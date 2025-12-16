@@ -1,5 +1,23 @@
-## Next.js App Router Course - Starter
+# Modern Dashboard using Next.js
 
-This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.
+This project is a modern dashboard application built with Next.js App Router. It demonstrates file-based routing, persistent layouts, and client-side navigation for a smooth and responsive user experience.
 
-For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
+## Features
+- Next.js App Router
+- File-based routing
+- Persistent dashboard layout
+- Client-side navigation
+- Active sidebar link highlighting
+- Responsive UI with Tailwind CSS
+
+## Tech Stack
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+
+## Getting Started
+
+Install dependencies:
+```bash
+pnpm install
