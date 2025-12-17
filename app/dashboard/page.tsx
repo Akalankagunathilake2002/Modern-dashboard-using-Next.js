@@ -2,10 +2,11 @@ import { Card } from '@/app/ui/dashboard/cards';
 import RevenueChart from '@/app/ui/dashboard/revenue-chart';
 import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import { lusitana } from '@/app/ui/fonts';
-import { fetchRevenue } from '@/app/lib/data';
+import { fetchRevenue,fetchLatestInvoices  } from '@/app/lib/data';
 
 export default async function Page() {
   const revenue = await fetchRevenue();
+   const latestInvoices = await fetchLatestInvoices();
 
   return (
     <main>
@@ -28,7 +29,7 @@ export default async function Page() {
         <RevenueChart revenue={revenue} />
 
         {/* Keep this commented until you fetch latestInvoices */}
-        {/* <LatestInvoices latestInvoices={latestInvoices} /> */}
+        <LatestInvoices latestInvoices={latestInvoices} ></LatestInvoices>
       </div>
     </main>
   );
